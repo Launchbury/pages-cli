@@ -44,10 +44,10 @@ pip install -e .
 
 ### Claude skill
 
-`skills/pages-cli/` is a Claude skill with working rules, the text-editing and offline-reading workflow, and a fast formatting audit for large documents. Link it into your own skills folder once (assumes this repository is cloned at `~/Code/pages-cli`):
+`skills/pages/` is a Claude skill: a short core (install, working rules, command reference) plus reference files that load only when a job needs them (editing existing documents, exporting and verifying, building from a template, a fast formatting audit for large documents, pitfalls). A plugin install picks it up automatically. For a manual clone, link it into your own skills folder once, running this from the repository root (it works wherever you cloned it):
 
 ```bash
-ln -s ~/Code/pages-cli/skills/pages-cli ~/.claude/skills/pages-cli
+ln -s "$PWD/skills/pages" ~/.claude/skills/pages
 ```
 
 ## Quick Start
