@@ -42,6 +42,14 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
 
+### Claude skill
+
+`skills/pages-cli/` is a Claude skill with working rules, the text-editing and offline-reading workflow, and a fast formatting audit for large documents. Link it into your own skills folder once (assumes this repository is cloned at `~/Code/pages-cli`):
+
+```bash
+ln -s ~/Code/pages-cli/skills/pages-cli ~/.claude/skills/pages-cli
+```
+
 ## Quick Start
 
 ```
