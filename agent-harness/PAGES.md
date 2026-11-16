@@ -381,7 +381,7 @@ end tell
 ```
 - Edits across the document are applied last-to-first so earlier positions stay valid.
 - Positions are Pages' characters, which equalled Python code points in every
-  paragraph of a 632-paragraph test document, including Hebrew with combining marks.
+  paragraph of a 632-paragraph test document, including right-to-left text with combining marks.
 - A line feed in the replacement starts a new paragraph in the same style.
 - A replacement that straddles a style change takes the style of the span's first
   character; the rest of the original runs keep their own.
